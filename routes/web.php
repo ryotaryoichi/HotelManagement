@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\RoomController;
-use App\Http\Controllers\RoomTypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +20,6 @@ Route::get('/', function () {
 
 Route::resource('room',RoomController::class);
 
-Route::resource('roomType',RoomTypeController::class);
 
 Route::get('/bar-chart',function(){
     return view('bar-chart');
